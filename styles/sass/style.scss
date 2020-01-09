@@ -1,0 +1,47 @@
+@import './setups';
+@import './variables';
+@import './mediaqueries';
+
+// using live sass vscode extension
+
+
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: $bodyText;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    .wrapper {
+        margin: 1rem;
+    }
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+.banner {
+    background: $black2;
+    color: #fff;
+    height: 3rem;
+}
+
+header {
+    line-height: 1.3;
+
+    h1 {
+        font-family: $playfair;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    h2 {
+        font-family: $playfair;
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+        padding-right: 2rem;
+    }
+}
