@@ -7,7 +7,7 @@
     <title>Ahuoiza Baiye Web Developer</title>
     <link rel="stylesheet" href="./styles/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap|IBM+Plex+Sans:300,400,600|Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gupter:700|IBM+Plex+Sans:300,400,600" rel="stylesheet">
 
     <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -24,8 +24,10 @@
             </div>
         </div>
         <div class="wrapper clearfix">
-            <h1>Hello, I'm Oiza.</h1>
-            <h2>I'm a Web Developer based in Toronto.</h2>
+            <div class="headings">
+                <h1>Hello, I'm Oiza.</h1>
+                <h2>I'm a Web Developer based in Toronto.</h2>
+            </div>
             <div class="myPhoto"> 
                 <img src="./assets/oizaphoto1.png" alt="Ahuoiza Baiye">
             </div>
@@ -45,7 +47,7 @@
                     </div>
                 </div>
                 <div class="accordion">
-                    <h3>Front-end focused
+                    <h3 id="second">Front-end focused
                         <span>
                             <i class="fas fa-long-arrow-alt-down animated tada infinite slow"></i>
                         </span>
@@ -68,7 +70,7 @@
         </section>
         <section class="toolkit">
             <div class="wrapper">
-                <h3>My toolkit</h3>
+                <h3 class="subheading">Toolbox</h3>
                     <div class="skills">
                         <span class="icon">
                             <i class="devicon-javascript-plain"></i>
@@ -113,31 +115,48 @@
                 </div>
             </div>
         </section>
+
         <section class="samples">
             <div class="wrapper">
-                <h3>Samples</h3>
-                <p>these are my projects</p>
+                <h3 class="subheading">Samples</h3>
+
+                <div class="project">
+                    <div class="site">
+                        <img src="./assets/silentpics.png" alt="screenshot of blue background with 'Silent Pics' heading" class="sitePhoto">
+                    </div>
+                    <div class="description">
+                        <p>An image search tool for introverts. This appimages from the Pexels API. I styled it with <a class="highlight" href="https://tachyons.io/" target="_blank">Tachyons</a>, a lightweight alternative to Bootstrap. The code follows the conventions of Airbnb's <a href="https://github.com/airbnb/javascript/blob/master/react/README.md" class="highlight" target="_blank">React styleguide</a>.</p>
+                      <p class="tools">HTML5 / React / Tachyons CSS / REST API </p>
+                      <div class="links">
+                        <a href="https://ahuoizabaiye.com/silentpics/" class="button">View site</a>
+                        <a href="https://github.com/oizabaiye/silent-pics" class="button">Github</a>
+                      </div>
+                    </div>
+                    </div>
             </div>
         </section>  
-        <div class="wrapper">
-            <div class="contact">
-                <div class="cardWrap">
-                    <h4>Want to chat?</h4>
-                    <hr>
-                    <h5>Oiza Baiye</h5>
-                    <p class="siteLink email">
-                    <a href="mailto:oizacodes@gmail.com">oizacodes[at]gmail.com</a>
-                    </p>
-                    <p class="siteLink"><a href="http://www.ahuoizabaiye.com">www.ahuoizabaiye.com</a></p>
-                    <p class="siteLink">
-                    <a target="_blank" href="https://www.linkedin.com/in/abaiye">www.linkedin.com/in/abaiye</a> 
-                    </p>
+
+        <section class="wantChat">
+            <div class="wrapper">
+                <div class="contact">
+                    <div class="cardWrap">
+                        <h4>Want to chat?</h4>
+                        <hr>
+                        <h5>Oiza Baiye</h5>
+                        <p class="siteLink email">
+                        <a href="mailto:oizacodes@gmail.com">oizacodes@gmail.com</a>
+                        </p>
+                        <p class="siteLink"><a href="http://www.ahuoizabaiye.com">www.ahuoizabaiye.com</a></p>
+                        <p class="siteLink">
+                        <a target="_blank" href="https://www.linkedin.com/in/abaiye">www.linkedin.com/in/abaiye</a> 
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <p>&copy; Code & Design by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
+        <p>&copy; Code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

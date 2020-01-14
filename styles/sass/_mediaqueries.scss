@@ -1,39 +1,103 @@
-@media (min-width: 500px) {
-    .wrapper {
-        border: 1px solid slateblue;
-    }
+@media (min-width: 510px) {
 
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        h2 {
+
+        h2, h1 {
             padding-right: auto;
+            text-align: center;
         }
+
+
     }
 
-    // .toolkit, .samples, .contact {
-    //     margin: 0 auto;
-    // }
-    
+    .wrapper {
+        div.myPhoto {
+            float: none;
+            margin: 4rem auto;
+        }
+    } 
 
     .banner {
         width: 100vw;
+
     }
+
+    section.about {
+        padding-top: 0;
+    }
+
+    section {
+        .subheading {
+            font-size: 2rem;
+        }
+    }
+
 }
 
 @media (min-width: 750px) {
+    header > .banner {
+    
+            .menu {
+                display: none;
+            }
+        }
+
+    body  p {
+        font-size: 1.125rem;
+    }
 
     .about .wrapper {
         .accordion {
             max-width: 550px;
         }
     }
-    
+
+    .about {
+        .innerBox {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .subheading {
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+
+    section.toolkit {
+        margin-top: 3rem; 
+
+        h3 {
+            padding-top: 1rem;
+        }
+
+        .wrapper .skills {
+            justify-content: baseline;
+            padding-top: 1rem;
+
+            .redux-container {
+                width: 4.5rem;
+            }
+
+            .icon {
+                margin: 2rem 2.2rem;
+                max-width: 40%;
+
+                h4 {
+                    font-size: 1rem;
+                }
+
+                i {
+                    font-size: 4.5rem;
+                }
+            }
+        }
+    }
 
     .wrapper {
-        // max-width: 750px;
 
         .contact {
             max-width: 550px;
@@ -41,6 +105,10 @@
 
             .cardWrap {
                 padding: 1.5rem;
+            }
+
+            .siteLink {
+                font-weight: 300;
             }
 
             h4 {
@@ -56,5 +124,18 @@
         }
     }
 
+}
+
+@media (min-width: 1000px) {
+
+    .about .wrapper {
+        .accordion {
+            max-width: 650px;
+        }
+    }
+
+    // header {
+    //     text-align: center;
+    // }
 
 }

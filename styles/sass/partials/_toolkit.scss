@@ -1,0 +1,45 @@
+.toolkit {
+    background: $gold;
+   
+    .wrapper {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    
+        .skills {
+            max-width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+    
+        .redux-container {
+            width: 4rem;
+            max-width: 30%;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .icon {
+            margin: 1rem;
+            max-width: 30%;
+    
+            h4 {
+                font-size: 0.875rem;
+                text-align: center;
+            }
+    
+            i {
+                font-size: 4rem;
+                max-width: 100%;
+                color: $black;
+            }
+        }
+        
+    }
+    
+}

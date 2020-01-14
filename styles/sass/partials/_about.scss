@@ -1,0 +1,43 @@
+.about {
+    padding: 1rem 0 3rem 0;
+
+    h3 {
+        padding: 8px 12px;
+        background: $blue;
+        color: $white;
+        margin: 0.8rem 0;
+        position: relative;
+
+        span {
+            max-height: 100%;
+            position: absolute;
+            top: 3px;
+            right: 1rem;
+            font-size: 1.4rem;
+        }
+
+    }
+
+    .accordion {
+        margin: 0 auto;
+        max-width: 375px;
+    }
+
+    h3:hover {
+        background: $gold;
+        border: none;
+        color: $black;
+    }
+
+    h3:active {
+        background: $gold;
+        border: none;
+        color: $black;
+    }
+
+    .innerBox {
+        padding: 12px 12px 0 12px;
+        margin-top: 0.5rem;
+        line-height: 1.6;
+    }
+}

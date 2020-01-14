@@ -1,0 +1,42 @@
+header {
+    line-height: 1.15;
+    margin: 0 auto;
+
+    h1, h2 {
+        font-family: $gupter;
+    }
+
+    .banner {
+        color: $blue;
+        padding: 1rem;
+    
+        .menu {
+            height: 100%;
+        }
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+        padding-top: 2rem;
+        color: $blue;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+        padding-right: 2rem;
+        color: $black;
+    }
+
+    div.myPhoto {
+        width: 270px;
+        margin: 3rem 1rem 2rem 2rem;
+        float: right;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

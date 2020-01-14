@@ -1,0 +1,52 @@
+.wantChat {
+    background: $gold;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contact {
+    clear: both;
+    max-width: 375px;
+    background-color: $black;
+    color: $white;
+    font-size: 0.85rem;
+    margin: 0 auto;
+    
+    p {
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin: 1rem 0;
+    }
+
+    .cardWrap {
+        padding: 1rem;
+    }
+
+    hr {
+        margin: 0.5rem 0;
+        color: $white;
+    }
+
+    .siteLink.email {
+        margin-bottom: 1rem;
+    }
+
+    .siteLink > a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    .siteLink > a:hover {
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+}
