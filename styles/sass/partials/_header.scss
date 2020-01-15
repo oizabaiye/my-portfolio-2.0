@@ -34,6 +34,11 @@ header {
         width: 270px;
         margin: 3rem 1rem 2rem 2rem;
         float: right;
+
+        @media(max-width: 375px) {
+            width: 250px;
+            margin-top: 2rem;
+        }
         @media(min-width: 750px) {
             width: 325px;
         }

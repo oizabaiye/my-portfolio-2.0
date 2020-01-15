@@ -2,6 +2,10 @@
     background: $gold;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    @media (min-width: 1000px) {
+        padding-bottom: 4rem;
+        padding-top: 4.5rem;
+    }
 }
 
 .contact {
@@ -47,6 +51,11 @@
 
     .siteLink > a:hover {
         text-decoration: underline;
-        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .siteLink > a:active {
+        text-decoration: underline;
+        font-weight: bold;
     }
 }
