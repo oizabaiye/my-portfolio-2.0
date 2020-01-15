@@ -308,6 +308,39 @@ header .banner .menu {
   height: 100%;
 }
 
+header .sideNav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: #FFFCFC;
+  background-color: #9E0C0C;
+  opacity: 0.97;
+  /*disables horizontal scroll*/
+  overflow-x: hidden;
+  padding-top: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: "Gupter", serif;
+}
+
+header .sideNav li {
+  list-style-type: none;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+header .sideNav li a {
+  color: #FFFCFC;
+  text-decoration: none;
+}
+
+header .sideNav li a i {
+  color: #FFFCFC;
+}
+
 header h1 {
   font-weight: 500;
   font-size: 3rem;

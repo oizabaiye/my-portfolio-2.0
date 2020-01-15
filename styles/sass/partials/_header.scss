@@ -13,6 +13,41 @@ header {
         .menu {
             height: 100%;
         }
+
+    }
+
+    .sideNav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: $white;
+        background-color: $maroon;
+        opacity: 0.97;
+        /*disables horizontal scroll*/
+        overflow-x: hidden;
+        padding-top: 20px;
+        transition: 0.2s;
+        font-family: $gupter;
+
+        // ul > #btnClose {
+        //     padding-bottom: 4rem;
+        // }
+
+        li {
+            list-style-type: none;
+            font-size: 1.6rem;
+            line-height: 2;
+            a {
+                color: $white;
+                text-decoration: none;
+                i {
+                    color: $white;
+                }
+            }
+        }
     }
 
     h1 {

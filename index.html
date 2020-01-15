@@ -18,11 +18,35 @@
 </head>
 <body>
     <header>
-        <div class="banner">
-            <div class="menu">
+        <nav class="banner">
+            <span class="menu openMenu" aria-label="Menu Button" tabindex="0" onclick="openMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </div>
-        </div>
+            </span>
+        </nav>
+
+        <!--mobile nav-->
+        <aside id="sideMenu" class="sideNav">
+            <ul class="wrapper">
+                <!-- include X sign for closing. adding '!' prevents a tag default -->
+                <a href="#!" class="btnClose" onclick="closeMenu()">
+                    <i class="far fa-window-close fa-2x" style="color: white"></i>
+                </a>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#toolkit">Toolkit</a>
+                </li>
+                <li>
+                    <a href="#samples">Samples</a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </aside>
         <div class="wrapper clearfix">
             <div class="headings">
                 <h1>Hello, I'm Oiza.</h1>
@@ -34,7 +58,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="accordion">
                     <h3>JavaScript is my Jam
@@ -68,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section class="toolkit">
+        <section class="toolkit" id="toolkit">
             <div class="wrapper">
                 <h3 class="subheading">Toolbox</h3>
                     <div class="skills">
@@ -116,7 +140,7 @@
             </div>
         </section>
 
-        <section class="samples">
+        <section class="samples" id="samples">
             <div class="wrapper">
                 <h3 class="subheading">Samples</h3>
 
@@ -161,7 +185,7 @@
             </div>
         </section>  
 
-        <section class="wantChat">
+        <section class="wantChat" id="contact">
             <div class="wrapper">
                 <div class="contact">
                     <div class="cardWrap">
