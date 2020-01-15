@@ -18,18 +18,28 @@
 
     }
 
+    #second {
+        background: $maroon;
+        color: $white;
+    }
+
+    // #second:hover {
+    //     background: $blue;
+    //     color: $white;
+    // }
+
     .accordion {
         margin: 0 auto;
         max-width: 375px;
     }
 
-    h3:hover {
+    h3:hover, #second:hover {
         background: $gold;
         border: none;
         color: $black;
     }
 
-    h3:active {
+    h3:active, #second:hover {
         background: $gold;
         border: none;
         color: $black;

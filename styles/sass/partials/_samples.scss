@@ -1,39 +1,88 @@
-.samples .wrapper {
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+.samples {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .subheading {
+        padding-bottom: 2rem;
+        color: $blue;
+    }
 
     .project {
-        
+        padding: 1rem 0;
+
         .site {
             max-width: 300px;
-            margin-top: 15px;
+            @media (min-width: 510px) {
+                max-width: 400px;
+            }
+            @media(min-width: 1000px) {
+                max-width: 550px;
+            }
+            margin-top: 1rem;
             margin: 0 auto;
         
             .sitePhoto {
                 max-width: 100%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 6px 6px 4px #ccc;
+                -webkit-box-shadow: 6px 6px 4px #ccc;
+                box-shadow: 6px 6px 4px #ccc;
+                -moz-border-radius:5px;
+                -webkit-border-radius:5px;
+                border-radius:5px;
             }
         }
 
-        .tools {
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
+        .description {
+            padding-top: 1rem;
+            margin: 0 auto;
+            @media(min-width: 510px) {
+                padding-top: 2rem;
+            }
+            @media(min-width: 750px) {
+                max-width: 650px;
+            }
 
-        .links {
-            .button {
-                padding: 8px 16px;
-                background: $blue;
-                color: $white;
-                font-weight: 500;
-                margin-right: 2%;
+            .highlight {
+                color: $maroon;
                 text-decoration: none;
             }
+
+            .highlight:hover {
+                text-decoration: underline;
+                color: $blue;
+            }
+
+            .tools {
+                font-size: 0.95rem;
+                font-weight: bold;
+                text-align: center;
+                @media(min-width: 510px) {
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                }
+            }
             
-            .button:hover {
-                // background: $blue;
-                // border: 4px solid $navy;
-                padding: 12px 20px;
+            .links {
+                text-align: center;
+                .button {
+                    color: $maroon;
+                    padding: 8px 16px;
+                    font-weight: 500;
+                    margin-right: 2%;
+                }
+                
+                .button:hover {
+                    background: $maroon;
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
             }
         }
+
     }
 }

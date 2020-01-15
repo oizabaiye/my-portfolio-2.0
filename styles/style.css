@@ -220,7 +220,6 @@ body * {
     margin-bottom: 1.5rem;
   }
   .subheading {
-    font-size: 1.75rem;
     font-weight: 500;
   }
   section.toolkit {
@@ -272,6 +271,12 @@ body * {
   .about .wrapper .accordion {
     max-width: 650px;
   }
+  .headings h1 {
+    font-size: 3.5rem;
+  }
+  .headings h2 {
+    font-size: 2rem;
+  }
 }
 
 header {
@@ -313,6 +318,12 @@ header div.myPhoto {
   float: right;
 }
 
+@media (min-width: 750px) {
+  header div.myPhoto {
+    width: 325px;
+  }
+}
+
 header div.myPhoto img {
   max-width: 100%;
 }
@@ -337,18 +348,23 @@ header div.myPhoto img {
   font-size: 1.4rem;
 }
 
+.about #second {
+  background: #9E0C0C;
+  color: #FFFCFC;
+}
+
 .about .accordion {
   margin: 0 auto;
   max-width: 375px;
 }
 
-.about h3:hover {
+.about h3:hover, .about #second:hover {
   background: #F4C75D;
   border: none;
   color: #0B0C10;
 }
 
-.about h3:active {
+.about h3:active, .about #second:hover {
   background: #F4C75D;
   border: none;
   color: #0B0C10;
@@ -412,37 +428,112 @@ header div.myPhoto img {
   color: #0B0C10;
 }
 
-.samples .wrapper {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+.samples {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.samples .wrapper .project .site {
+.samples .subheading {
+  padding-bottom: 2rem;
+  color: #483EA0;
+}
+
+.samples .project {
+  padding: 1rem 0;
+}
+
+.samples .project .site {
   max-width: 300px;
-  margin-top: 15px;
+  margin-top: 1rem;
   margin: 0 auto;
 }
 
-.samples .wrapper .project .site .sitePhoto {
+@media (min-width: 510px) {
+  .samples .project .site {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .samples .project .site {
+    max-width: 550px;
+  }
+}
+
+.samples .project .site .sitePhoto {
   max-width: 100%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 6px 6px 4px #ccc;
+  box-shadow: 6px 6px 4px #ccc;
+  border-radius: 5px;
 }
 
-.samples .wrapper .project .tools {
-  font-size: 0.9rem;
-  font-weight: bold;
+.samples .project .description {
+  padding-top: 1rem;
+  margin: 0 auto;
 }
 
-.samples .wrapper .project .links .button {
-  padding: 8px 16px;
-  background: #483EA0;
-  color: #FFFCFC;
-  font-weight: 500;
-  margin-right: 2%;
+@media (min-width: 510px) {
+  .samples .project .description {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .samples .project .description {
+    max-width: 650px;
+  }
+}
+
+.samples .project .description .highlight {
+  color: #9E0C0C;
   text-decoration: none;
 }
 
-.samples .wrapper .project .links .button:hover {
-  padding: 12px 20px;
+.samples .project .description .highlight:hover {
+  text-decoration: underline;
+  color: #483EA0;
+}
+
+.samples .project .description .tools {
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 510px) {
+  .samples .project .description .tools {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.samples .project .description .links {
+  text-align: center;
+}
+
+.samples .project .description .links .button {
+  color: #9E0C0C;
+  padding: 8px 16px;
+  font-weight: 500;
+  margin-right: 2%;
+}
+
+.samples .project .description .links .button:hover {
+  background: #9E0C0C;
+  color: #FFFCFC;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .wantChat {

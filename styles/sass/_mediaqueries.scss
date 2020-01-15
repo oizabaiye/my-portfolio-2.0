@@ -63,7 +63,6 @@
     }
 
     .subheading {
-        font-size: 1.75rem;
         font-weight: 500;
     }
 
@@ -124,6 +123,8 @@
         }
     }
 
+    
+
 }
 
 @media (min-width: 1000px) {
@@ -134,8 +135,14 @@
         }
     }
 
-    // header {
-    //     text-align: center;
-    // }
+    .headings {
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
 
 }

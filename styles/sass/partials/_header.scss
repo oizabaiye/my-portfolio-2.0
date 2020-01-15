@@ -34,6 +34,9 @@ header {
         width: 270px;
         margin: 3rem 1rem 2rem 2rem;
         float: right;
+        @media(min-width: 750px) {
+            width: 325px;
+        }
 
         img {
             max-width: 100%;
