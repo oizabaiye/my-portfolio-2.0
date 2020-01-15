@@ -10,7 +10,7 @@
     }
 
     .project {
-        padding: 1rem 0;
+        padding: 1rem 0 3rem 0;
 
         .site {
             max-width: 300px;
@@ -25,6 +25,7 @@
         
             .sitePhoto {
                 max-width: 100%;
+                // shadow effect from http://www.corelangs.com/css/box/image-shadow.html
                 border: 2px solid #fff;
                 -moz-box-shadow: 6px 6px 4px #ccc;
                 -webkit-box-shadow: 6px 6px 4px #ccc;
