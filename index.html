@@ -61,19 +61,21 @@
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="accordion">
-                    <h3>JavaScript is my Jam
+                    <h3 id="makeActive">JavaScript is my Jam
                         <span>
-                            <i class="fas fa-long-arrow-alt-down animated tada infinite slow"></i>
+                            <i class="fas fa-plus animated heartBeat infinite hide" id="firstPlus"></i>
+                            <i class="fas fa-minus" id="firstMinus"></i>
                         </span>
                     </h3>
                     <div class="innerBox" id="inner1">
-                        <p>I have written code in modern ES6, React and Redux for startups. I've also written unit and integration tests in Jest and Enzyme, and recently began learning Node + Express. My earliest introduction to JavaScript was through Gordon Zhu's <a href="https://watchandcode.com/" class="siteLink">Watch and Code</a>. That iterative process to solving problems continues to inform my approach to programming. </p>
+                        <p>I have written code in modern ES6, React and Redux for startups. I've also written unit and integration tests in Jest and Enzyme, and recently began learning Node + Express. My earliest introduction to JavaScript was through Gordon Zhu's <a href="https://watchandcode.com/" class="siteLink">Watch and Code</a>. That iterative process for solving problems continues to inform my approach to programming. </p>
                     </div>
                 </div>
                 <div class="accordion">
                     <h3 id="second">Front-end focused
                         <span>
-                            <i class="fas fa-long-arrow-alt-down animated tada infinite slow"></i>
+                            <i class="fas fa-plus animated heartBeat infinite"></i>
+                            <i class="fas fa-minus hide"></i>
                         </span>
                     </h3>
                     <div class="innerBox" id="inner2">
@@ -83,7 +85,8 @@
                 <div class="accordion">
                     <h3>A global perspective
                         <span>
-                            <i class="fas fa-long-arrow-alt-down animated tada infinite slow"></i>
+                            <i class="fas fa-plus animated heartBeat infinite"></i>
+                            <i class="fas fa-minus hide"></i>
                         </span>
                     </h3>
                     <div class="innerBox" id="inner3">
@@ -150,7 +153,7 @@
                     </div>
                     <div class="description">
                         <p>This page can be viewed when submitting home info as a prospective seller to <a href="https://www.goproperly.com/" class="highlight">Properly</a>. My task was to change the choices for garage/parking available to a user. I revised the API data model in which these choices are defined, and updated the 1:1 mapping on the frontend.</p>
-                        <p>For this, I worked in two separate codebases - the client web app and the internal tool used by Operations team. As well as ensuring that the much smaller list you see here maps correctly to the longer list of options used in internal tools.</p>
+                        <p>For this, I worked in two separate codebases - one external user-facing and an internal Operations app - ensuring that the much smaller list you see here maps correctly to the longer list of options used internally.</p>
                         <p class="tools"> React / Redux / Bootstrap / Sass / YAML / Jest / Enzyme </p>
                     </div>
                 </div>
@@ -160,7 +163,7 @@
                         <img src="./assets/silentpics.png" alt="screenshot of blue background with 'Silent Pics' heading" class="sitePhoto">
                     </div>
                     <div class="description">
-                        <p>As a personal project, I built this image search tool for introverts in React. When a user submits a search term, the app pulls images from the Pexels API and displays them. I styled this with <a class="highlight" href="https://tachyons.io/" target="_blank">Tachyons</a>, a lightweight alternative to Bootstrap. The code follows the Airbnb's <a href="https://github.com/airbnb/javascript/blob/master/react/README.md" class="highlight" target="_blank">React conventions</a>.</p>
+                        <p>As a personal project, I built this image search tool for introverts in React. When a user submits a search term, the app pulls images from the Pexels API and displays them. I styled this with <a class="highlight" href="https://tachyons.io/" target="_blank">Tachyons</a>, a lightweight alternative to Bootstrap. The code follows Airbnb's <a href="https://github.com/airbnb/javascript/blob/master/react/README.md" class="highlight" target="_blank">React style guide</a>.</p>
                         <p class="tools">HTML5 / React / Tachyons CSS / REST API </p>
                         <div class="links">
                             <a href="https://ahuoizabaiye.com/silentpics/" class="button">View site</a>
@@ -206,7 +209,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Code & Concept by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
+        <p>&copy; Code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

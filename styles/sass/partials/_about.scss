@@ -18,9 +18,17 @@
 
     }
 
-    #second {
-        background: $maroon;
-        color: $white;
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .isActive {
+        background: $gold;
+        color: $black;
     }
 
     .accordion {

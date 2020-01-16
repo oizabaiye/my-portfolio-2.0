@@ -408,9 +408,17 @@ header div.myPhoto img {
   font-size: 1.4rem;
 }
 
-.about #second {
-  background: #9E0C0C;
-  color: #FFFCFC;
+.about .hide {
+  display: none;
+}
+
+.about .show {
+  display: inline-block;
+}
+
+.about .isActive {
+  background: #F4C75D;
+  color: #0B0C10;
 }
 
 .about .accordion {
