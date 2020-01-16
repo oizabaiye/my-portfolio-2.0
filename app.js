@@ -10,10 +10,19 @@ $(document).ready(function() {
 
 // mobile menu functionality
 const openMenu = () => {
-    document.getElementById('sideMenu').style.width = '100vw';
-  }
+    //onclick, maximize the sidemenu
+    let sideMenu = document.getElementById('sideMenu');
+    sideMenu.style.width = '100vw';
+
+    //when user clicks any of the items in the menu, close it
+    document.querySelector('ul.wrapper').addEventListener('click', () => {
+        closeMenu()
+    })
+
+}
   
-  //? on clicking the x, return to default
-  const closeMenu = () => {
+const closeMenu = () => {
     document.getElementById('sideMenu').style.width = '0';
-  }
+}
+
+

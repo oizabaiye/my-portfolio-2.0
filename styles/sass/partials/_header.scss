@@ -25,27 +25,33 @@ header {
         left: 0;
         color: $white;
         background-color: $maroon;
-        opacity: 0.97;
+        opacity: 0.96;
         /*disables horizontal scroll*/
         overflow-x: hidden;
         padding-top: 20px;
         transition: 0.2s;
         font-family: $gupter;
 
-        // ul > #btnClose {
-        //     padding-bottom: 4rem;
-        // }
-
         li {
             list-style-type: none;
-            font-size: 1.6rem;
-            line-height: 2;
+            font-size: 1.8rem;
+            line-height: 2.5;
             a {
                 color: $white;
                 text-decoration: none;
+                font-weight: 600;
+
                 i {
                     color: $white;
                 }
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            a:active {
+                text-decoration: underline;
             }
         }
     }

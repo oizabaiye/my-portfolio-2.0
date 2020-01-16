@@ -28,19 +28,19 @@
         <aside id="sideMenu" class="sideNav">
             <ul class="wrapper">
                 <!-- include X sign for closing. adding '!' prevents a tag default -->
-                <a href="#!" class="btnClose" onclick="closeMenu()">
-                    <i class="far fa-window-close fa-2x" style="color: white"></i>
+                <a href="#!" class="btnClose">
+                    <i class="far fa-window-close fa-2x" style="color: #ffffff"></i>
                 </a>
-                <li>
+                <li style="margin-top: 2rem" class="anchorLinks">
                     <a href="#about">About</a>
                 </li>
-                <li>
-                    <a href="#toolkit">Toolkit</a>
+                <li class="anchorLinks">
+                    <a href="#toolkit">Toolbox</a>
                 </li>
-                <li>
+                <li class="anchorLinks">
                     <a href="#samples">Samples</a>
                 </li>
-                <li>
+                <li class="anchorLinks">
                     <a href="#contact">
                         Contact Me
                     </a>
@@ -67,7 +67,7 @@
                         </span>
                     </h3>
                     <div class="innerBox" id="inner1">
-                        <p>I have written code in modern ES6, React and Redux for startups like Properly, and recently began learning Node + Express. My earliest introduction to JavaScript was through Gordon Zhu's <a href="https://watchandcode.com/" class="siteLink">Watch and Code</a>. That iterative approach solving problems continues to inform my approach to code challenges on and off the job. </p>
+                        <p>I have written code in modern ES6, React and Redux for startups. I've also written unit and integration tests in Jest and Enzyme, and recently began learning Node + Express. My earliest introduction to JavaScript was through Gordon Zhu's <a href="https://watchandcode.com/" class="siteLink">Watch and Code</a>. That iterative process to solving problems continues to inform my approach to programming. </p>
                     </div>
                 </div>
                 <div class="accordion">
@@ -87,7 +87,7 @@
                         </span>
                     </h3>
                     <div class="innerBox" id="inner3">
-                        <p> I discovered a proclivity for building webpages while working in communications at the United Nations. I think my lifelong exposure to diverse cultures makes me a uniquely well-rounded developer. You'll often find me at tech events & gatherings in my city, and avidly consuming news and debates on the latest practices and happenings in software development.</p>
+                        <p> I discovered a proclivity for building webpages while working in government relations at the UN. I think my lifelong exposure to diverse cultures makes me a uniquely well-rounded developer. You'll often find me at tech events & gatherings in my city, and avidly consuming news and debates on the latest practices and happenings in software development.</p>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,8 @@
                         <img src="./assets/properly.png" alt="screenshot of Properly garage question page" class="sitePhoto">
                     </div>
                     <div class="description">
-                        <p>This live page can be viewed while submitting home info as a prospective seller to the real estate startup, <a href="https://www.goproperly.com/" class="highlight">Properly</a>. My task was to provide more choices for garage/parking in the UI, revise the API data model in which these choices are defined, and update the 1:1 mapping functions on the frontend so that the options shown to a user are worded slightly different from the garage model. I had the fun challenge of editing the Properly logo SVG file so it renders correctly on older browsers, and also tweaked a few unit and integration tests.</p>
+                        <p>This page can be viewed when submitting home info as a prospective seller to <a href="https://www.goproperly.com/" class="highlight">Properly</a>. My task was to change the choices for garage/parking available to a user. I revised the API data model in which these choices are defined, and updated the 1:1 mapping on the frontend.</p>
+                        <p>For this, I worked in two separate codebases - the client web app and the internal tool used by Operations team. As well as ensuring that the much smaller list you see here maps correctly to the longer list of options used in internal tools.</p>
                         <p class="tools"> React / Redux / Bootstrap / Sass / YAML / Jest / Enzyme </p>
                     </div>
                 </div>
@@ -205,7 +206,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
+        <p>&copy; Code & Concept by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

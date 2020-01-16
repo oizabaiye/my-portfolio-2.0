@@ -317,7 +317,7 @@ header .sideNav {
   left: 0;
   color: #FFFCFC;
   background-color: #9E0C0C;
-  opacity: 0.97;
+  opacity: 0.96;
   /*disables horizontal scroll*/
   overflow-x: hidden;
   padding-top: 20px;
@@ -328,17 +328,26 @@ header .sideNav {
 
 header .sideNav li {
   list-style-type: none;
-  font-size: 1.6rem;
-  line-height: 2;
+  font-size: 1.8rem;
+  line-height: 2.5;
 }
 
 header .sideNav li a {
   color: #FFFCFC;
   text-decoration: none;
+  font-weight: 600;
 }
 
 header .sideNav li a i {
   color: #FFFCFC;
+}
+
+header .sideNav li a:hover {
+  text-decoration: underline;
+}
+
+header .sideNav li a:active {
+  text-decoration: underline;
 }
 
 header h1 {
@@ -499,7 +508,7 @@ header div.myPhoto img {
 }
 
 .samples .project {
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 4rem 0;
 }
 
 .samples .project .site {
@@ -563,7 +572,7 @@ header div.myPhoto img {
 
 @media (min-width: 510px) {
   .samples .project .description .tools {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 1rem;
   }
 }
@@ -607,6 +616,7 @@ header div.myPhoto img {
   color: #FFFCFC;
   font-size: 0.85rem;
   margin: 0 auto;
+  border-radius: 2px;
 }
 
 .contact p {
@@ -682,7 +692,7 @@ p {
 
 footer {
   background: #0B0C10;
-  color: #FFFCFC;
+  color: #F4C75D;
   font-size: 0.9rem;
   padding: 0.8rem;
   text-align: center;
