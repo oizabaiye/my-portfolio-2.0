@@ -413,7 +413,7 @@ header div.myPhoto img {
 }
 
 .about .show {
-  display: inline-block;
+  display: block;
 }
 
 .about .isActive {
