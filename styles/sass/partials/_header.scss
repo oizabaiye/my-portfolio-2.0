@@ -24,22 +24,22 @@ header {
         top: 0;
         left: 0;
         color: $white;
-        background-color: $maroon;
-        opacity: 0.96;
+        background-color: $blue;
+        opacity: 0.98;
         /*disables horizontal scroll*/
         overflow-x: hidden;
         padding-top: 20px;
         transition: 0.2s;
-        font-family: $gupter;
+        font-family: $bodyText;
 
         li {
             list-style-type: none;
-            font-size: 1.8rem;
-            line-height: 2.5;
+            font-size: 1.6rem;
+            line-height: 2.3;
             a {
                 color: $white;
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 500;
 
                 i {
                     color: $white;

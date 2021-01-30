@@ -316,26 +316,26 @@ header .sideNav {
   top: 0;
   left: 0;
   color: #FFFCFC;
-  background-color: #9E0C0C;
-  opacity: 0.96;
+  background-color: #483EA0;
+  opacity: 0.98;
   /*disables horizontal scroll*/
   overflow-x: hidden;
   padding-top: 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  font-family: "Gupter", serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 header .sideNav li {
   list-style-type: none;
-  font-size: 1.8rem;
-  line-height: 2.5;
+  font-size: 1.6rem;
+  line-height: 2.3;
 }
 
 header .sideNav li a {
   color: #FFFCFC;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header .sideNav li a i {
