@@ -1,28 +1,22 @@
 $(document).ready(function() {
-    //keep about me text hidden
-    $('.innerBox').hide()
+     // Initially hide all innerBox elements except the first
+     $('.innerBox').hide();
+     $('#inner1').show();
+     $('#makeActive').addClass('isActive');
+     $('#makeActive').find('.fa-minus').removeClass('hide');
+     $('#makeActive').find('.fa-plus').addClass('hide');
 
-    // keeps 'JavaScript is my jam' active on page load
-    $('#inner1').show()
-    $('#makeActive').addClass('isActive')
+    // On click of heading, toggle its innerBox and update classes
+    $('h3').on('click', function() {
+        $(this).next().slideToggle(600);
+        $(this).toggleClass('isActive');
 
-    // on click of heading, show about me text
-    $('h3').on('click', function(){
-        $(this).next().toggle(600)
-
-        // check if plus or minus is in the DOM
-        let plusSign = $(this).find('.fa-plus')
-        let minusSign = $(this).find('.fa-minus')
-        console.log(plusSign)
-
-        //if there's a plus sign remove it and show minus, and vice versa
-        plusSign.toggleClass('hide')
-        minusSign.toggleClass('hide')
-    })
-
-    $('#makeActive').on('click', function(){
-        $(this).toggleClass('isActive')
-    })
+        // Toggle icons
+        let plusSign = $(this).find('.fa-plus');
+        let minusSign = $(this).find('.fa-minus');
+        plusSign.toggleClass('hide');
+        minusSign.toggleClass('hide');
+    });
 
 })
 
