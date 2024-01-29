@@ -1,225 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ahuoiza Baiye Web Developer</title>
-    <link rel="stylesheet" href="./styles/style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Ahuoiza Baiye Web Developer</title>
+		<link rel="stylesheet" href="./styles/style.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Gupter:700|IBM+Plex+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <script src="https://kit.fontawesome.com/260fc880d3.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Gupter:700|IBM+Plex+Sans:300,400,600"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+		/>
+		<script src="https://kit.fontawesome.com/260fc880d3.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		/>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '885575348863832');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=885575348863832&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
-</head>
-<body>
-    <header>
-        <nav class="banner">
-            <span class="menu openMenu" aria-label="Menu Button" tabindex="0" onclick="openMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </span>
-        </nav>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function () {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = "2.0"
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js")
+			fbq("init", "885575348863832")
+			fbq("track", "PageView")
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display: none"
+				src="https://www.facebook.com/tr?id=885575348863832&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+	<body>
+		<header>
+			<nav class="banner">
+				<span class="menu openMenu" aria-label="Menu Button" tabindex="0" onclick="openMenu()">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="feather feather-menu"
+					>
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</span>
+			</nav>
 
-        <!--mobile nav-->
-        <aside id="sideMenu" class="sideNav">
-            <ul class="wrapper">
-                <!-- include X sign for closing. adding '!' prevents a tag default -->
-                <a href="#!" class="btnClose">
-                    <i class="far fa-window-close fa-2x" style="color: #ffffff"></i>
-                </a>
-                <li style="margin-top: 2rem" class="anchorLinks">
-                    <a href="#about">About</a>
-                </li>
-                <li class="anchorLinks">
-                    <a href="#toolkit">Toolbox</a>
-                </li>
-                <li class="anchorLinks">
-                    <a href="#samples">Samples</a>
-                </li>
-                <li class="anchorLinks">
-                    <a href="#contact">
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <div class="wrapper clearfix">
-            <div class="headings">
-                <h1>Hello, I'm Oiza.</h1>
-                <h2>I'm a Front-end Engineer based in Toronto.</h2>
-            </div>
-            <div class="myPhoto"> 
-                <img src="./assets/oizapic.jpg" alt="Ahuoiza Baiye">
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="about" id="about">
-            <div class="wrapper">
-                <div class="accordion">
-                    <h3 id="makeActive">JavaScript is my Jam
-                        <span>
-                            <i class="fas fa-plus animated heartBeat infinite hide" id="firstPlus"></i>
-                            <i class="fas fa-minus" id="firstMinus"></i>
-                        </span>
-                    </h3>
-                    <div class="innerBox" id="inner1">
-                        <p>For two years, I have written code in modern ES6, React and Redux for startups. I've also written unit and integration tests in Jest, Enzyme and React Testing Library, and also worked with Gatsby and GraphQL. As of 2022, I began studying computer science through the University of Pennyslvania</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <h3 id="second">Front-end savvy
-                        <span>
-                            <i class="fas fa-plus animated heartBeat infinite"></i>
-                            <i class="fas fa-minus hide"></i>
-                        </span>
-                    </h3>
-                    <div class="innerBox" id="inner2">
-                        <p>I enjoy making the web look great, responsive and accessible. I took the time to learn concepts like web typography (thanks to <a href="https://betterwebtype.com/" class="siteLink">Matej Latin</a>) and <a href="https://medium.com/@erikdkennedy/7-rules-for-creating-gorgeous-ui-part-1-559d4e805cda" class="siteLink">basic design principles</a> to tune up this website (built mobile-first) in 2020, and to help me work better with designers and product managers.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <h3>A global perspective
-                        <span>
-                            <i class="fas fa-plus animated heartBeat infinite"></i>
-                            <i class="fas fa-minus hide"></i>
-                        </span>
-                    </h3>
-                    <div class="innerBox" id="inner3">
-                        <p>I think my lifelong exposure to diverse cultures, through living & working in three other countries before moving to Canada, makes me a uniquely well-rounded developer. You'll often find me at tech events & gatherings in my city, and avidly consuming news and debates on the latest practices and happenings in software development.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="toolkit" id="toolkit">
-            <div class="wrapper">
-                <h3 class="subheading">Toolbox</h3>
-                    <div class="skills">
-                        <span class="icon">
-                            <i class="devicon-javascript-plain"></i>
-                            <h4>JavaScript</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-react-original"></i>
-                            <h4>React</h4>
-                        </span>
-                        <span class="icon redux-container">
-                            <i class="devicon-redux-original"></i>
-                            <h4>Redux</h4> 
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-gatsby-plain colored"></i>
-                            <h4>Gatsby</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-jest-plain"></i>
-                            <h4>Jest</h4>
-                        </span>
-                        <span class="icon redux-container">
-                            <img src="./assets/testing-library.svg" alt="React Testing Library" className="redux-png">
-                            <h4>Testing Library</h4> 
-                        </span>
+			<!--mobile nav-->
+			<aside id="sideMenu" class="sideNav">
+				<ul class="wrapper">
+					<!-- include X sign for closing. adding '!' prevents a tag default -->
+					<a href="#!" class="btnClose">
+						<i class="far fa-window-close fa-2x" style="color: #ffffff"></i>
+					</a>
+					<li style="margin-top: 2rem" class="anchorLinks">
+						<a href="#about">About</a>
+					</li>
+					<li class="anchorLinks">
+						<a href="#toolkit">Toolbox</a>
+					</li>
+					<li class="anchorLinks">
+						<a href="#samples">Samples</a>
+					</li>
+					<li class="anchorLinks">
+						<a href="#contact"> Contact Me </a>
+					</li>
+				</ul>
+			</aside>
+			<div class="wrapper clearfix">
+				<div class="headings">
+					<h1>Hello, I'm Oiza.</h1>
+					<h2>I'm a Software Engineer based in Toronto.</h2>
+				</div>
+				<div class="myPhoto">
+					<img src="./assets/oizapic.jpg" alt="Ahuoiza Baiye" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="about" id="about">
+				<div class="wrapper">
+					<div class="accordion">
+						<h3 id="makeActive">
+							JavaScript is my Jam
+							<span>
+								<i class="fas fa-plus animated heartBeat infinite hide" id="firstPlus"></i>
+								<i class="fas fa-minus" id="firstMinus"></i>
+							</span>
+						</h3>
+						<div class="innerBox" id="inner1">
+							<p>
+								I have specialized in modern ES6, React, Redux, and
+								Vue, building apps and features for acclaimed startups. My expertise extends
+								to crafting unit and integration tests using Jest, Enzyme, and React Testing
+								Library, as well as comprehensive end-to-end testing with Cypress. Most
+								recently, I've embarked on a formal study of computer science fundamentals
+								through a conversion master's program at the University of Pennsylvania.
+							</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h3 id="second">
+							Front-end savvy
+							<span>
+								<i class="fas fa-plus animated heartBeat infinite"></i>
+								<i class="fas fa-minus hide"></i>
+							</span>
+						</h3>
+						<div class="innerBox" id="inner2">
+							<p>
+								I am passionate about crafting visually appealing, responsive, and
+								accessible websites. Inspired by
+								<a href="https://betterwebtype.com/" class="siteLink">Matej Latin</a>, I
+								learned about web typography and fundamental design principles to tune up
+								this website. This knowledge has also enhanced my collaboration with
+								designers and product managers
+							</p>
+						</div>
+					</div>
+					<div class="accordion">
+						<h3>
+							A global perspective
+							<span>
+								<i class="fas fa-plus animated heartBeat infinite"></i>
+								<i class="fas fa-minus hide"></i>
+							</span>
+						</h3>
+						<div class="innerBox" id="inner3">
+							<p>
+								My exposure to diverse cultures as a Nigerian Canadian, combined with my
+								experiences living and studying in the United States, has shaped me into a
+								uniquely well-rounded developer. I am actively involved in my city's tech
+								events and gatherings, and I have a keen interest in staying updated with
+								the latest practices and developments in software development, often
+								engaging in news and debates surrounding these topics.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="toolkit" id="toolkit">
+				<div class="wrapper">
+					<h3 class="subheading">Toolbox</h3>
+					<div class="skills">
+						<span class="icon">
+							<i class="devicon-javascript-plain"></i>
+							<h4>JavaScript</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-react-original"></i>
+							<h4>React</h4>
+						</span>
+						<span class="icon redux-container">
+							<i class="devicon-redux-original"></i>
+							<h4>Redux</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-vuejs-plain"></i>
 
-                        <span class="icon">
-                            <i class="devicon-css3-plain"></i>
-                            <h4>CSS3</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-sass-original"></i>
-                            <h4>Sass</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-less-plain-wordmark"></i>
-                            <h4>Less</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-html5-plain"></i>
-                            <h4>HTML5</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-circleci-plain"></i>
-                            <h4>CircleCi</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-docker-plain"></i>
-                            <h4>Docker</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-github-plain"></i>
-                            <h4>Github</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-figma-plain"></i>
-                            <h4>Figma</h4>
-                        </span>
-                        <span class="icon">
-                            <i class="devicon-storybook-plain"></i>
-                            <h4>Storybook</h4>
-                        </span>
-                </div>
-            </div>
-        </section>
+							<h4>Vue</h4>
+						</span>
+						<span class="icon redux-container">
+							<i class="devicon-gatsby-plain"></i>
+							<h4>Gatsby</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-python-plain"></i>
 
-        <section class="samples" id="samples">
-            <div class="wrapper">
-                <h3 class="subheading">Samples</h3>
+							<h4>Python</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-flask-original"></i>
+							<h4>Flask</h4>
+						</span>
 
-                <div class="project">
-                    <div class="description">
-                        <p>Here's a tech talk I recorded for <a href="https://torontojs.com/" class="highlight">Toronto JS</a> describing my experience working on a design system at <a href="https://torontojs.com/" class="highlight">Bevy</a>, including building a tricky reusable tooltip component.
-                        <p class="tools"> React / Jest / Testing Library / Less / Storybook / PropTypes </p>
-                    </div>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vq9RNP6m1jA?start=3" title="YouTube video player" controls=0 frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; modestbranding" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>  
+						<span class="icon">
+							<i class="devicon-html5-plain"></i>
+							<h4>HTML5</h4>
+						</span>
 
-        <section class="wantChat" id="contact">
-            <div class="wrapper">
-                <div class="contact">
-                    <div class="cardWrap">
-                        <h4>Want to chat?</h4>
-                        <hr>
-                        <h5>Oiza Baiye</h5>
-                        <p class="siteLink email">
-                        <a href="mailto:oizacodes@gmail.com">oizacodes@gmail.com</a>
-                        </p>
-                        <p class="siteLink"><a href="http://www.ahuoizabaiye.com">www.ahuoizabaiye.com</a></p>
-                        <p class="siteLink">
-                        <a target="_blank" href="https://www.linkedin.com/in/abaiye">www.linkedin.com/in/abaiye</a> 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; Code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
-    </footer>
+						<span class="icon">
+							<i class="devicon-css3-plain"></i>
+							<h4>CSS3</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-sass-original"></i>
+							<h4>Sass</h4>
+						</span>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+						<span class="icon">
+							<i class="devicon-github-plain"></i>
+							<h4>Github</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-figma-plain"></i>
+							<h4>Figma</h4>
+						</span>
+						<span class="icon">
+							<i class="devicon-storybook-plain"></i>
+							<h4>Storybook</h4>
+						</span>
 
-    <script src="./app.js"></script>
-</body>
+						<span class="icon">
+							<i class="devicon-jest-plain"></i>
+							<h4>Jest</h4>
+						</span>
+
+						<span class="icon redux-container">
+							<img
+								src="./assets/testing-library.svg"
+								alt="React Testing Library"
+								className="redux-png"
+							/>
+							<h4>Testing Library</h4>
+						</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="samples" id="samples">
+				<div class="wrapper">
+					<h3 class="subheading">Samples</h3>
+
+					<div class="project">
+						<div class="description">
+							<p>
+								Here's a tech talk I recorded for
+								<a href="https://torontojs.com/" class="highlight">Toronto JS</a> describing
+								my experience working on a design system at
+								<a href="https://torontojs.com/" class="highlight">Bevy</a>, including
+								building a tricky reusable tooltip component.
+							</p>
+							<p class="tools">
+								React / Jest / Testing Library / Less / Storybook / PropTypes
+							</p>
+						</div>
+						<div class="video-container">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube-nocookie.com/embed/Vq9RNP6m1jA?start=3"
+								title="YouTube video player"
+								controls="0"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; modestbranding"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="wantChat" id="contact">
+				<div class="wrapper">
+					<div class="contact">
+						<div class="cardWrap">
+							<h4>Want to chat?</h4>
+							<hr />
+							<h5>Oiza Baiye</h5>
+							<p class="siteLink email">
+								<a href="mailto:oizacodes@gmail.com">oizacodes@gmail.com</a>
+							</p>
+							<p class="siteLink">
+								<a href="http://www.ahuoizabaiye.com">www.ahuoizabaiye.com</a>
+							</p>
+							<p class="siteLink">
+								<a target="_blank" href="https://www.linkedin.com/in/abaiye"
+									>www.linkedin.com/in/abaiye</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; Code by Oiza <i class="fas fa-hand-holding-heart fa-sm"></i></p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script src="./app.js"></script>
+	</body>
 </html>
